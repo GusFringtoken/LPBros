@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My HTML Page</title>
+  </head>
+  <body>
+    <audio id="myAudio">
+      <source src="masnolehanavisado.mp3" type="audio/mpeg">
+    </audio>
+
+    <button onclick="playAudio()">Reproducir</button>
+
+    <script>
+      var audio = document.getElementById("myAudio");
+
+      function playAudio() {
+        audio.play();
+      }
+    </script>
+  </body>
+</html>
