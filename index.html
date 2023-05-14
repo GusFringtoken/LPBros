@@ -7,10 +7,34 @@
     <script src="noticias.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
-      window.onload = function() {
-        window.open("https://gusfringtoken.github.io/LPBros/masnolehanavisado.html", "popup", "width=600,height=400");
+      function mostrarPopup() {
+        var popup = document.getElementById("popup");
+        popup.style.display = "block";
       }
     </script>
+    <style>
+      #popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 9999;
+        display: none;
+      }
+    
+      #popup-contenido {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+      }
+    </style>
     <style>
       .noticia:nth-child(odd) {
         color: #1eff00;
@@ -27,9 +51,6 @@
     </style>
   </head>
   <body>
-    <audio autoplay="true">
-      <source src="masnolehanavisado.mp3" type="audio/mpeg">
-    </audio>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <div class="banner-container">
@@ -37,6 +58,13 @@
         </div>
       </div>
     </nav>
+    <div id="popup">
+      <div id="popup-contenido">
+        <h2>Welcome to LosPollosBros</h2>
+        <p>(play loud music)</p>
+        <button onclick="aceptarPopup()">Accept!</button>
+      </div>
+    </div>
     <div class="container">
       <marquee class='noticias-container' behavior="scroll" direction="left" onend="this.scrollAmount = 0; this.style.transform = 'translateX(0)'">
         <span class="noticia">Jim Cramer Bullish on LPB / </span>  
