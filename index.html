@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>LPB landing page</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="noticias.js"></script>
+    <style>
+      .noticia:nth-child(odd) {
+        color: #34a125;
+        text-align: center;
+      }
+      .noticia:nth-child(even) {
+        color: #ad1f1f;
+        text-align: center;
+      }
+      .noticias-container {
+        height: 80px;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <div class="banner-container">
+          <img src="banner.gif" alt="Banner" class="img-banner">
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <marquee class='noticias-container' behavior="scroll" direction="left">
+        <span class="noticia">Jim Cramer Bullish on LPB</span> / 
+        <span class="noticia">New partnership with TSLA boosts sales of chicken wings in LA</span> / 
+        <span class="noticia">LPB +140% in the NYSE</span> / 
+        <span class="noticia">LPB partners with Wakanda for Vibranium packaging</span> / 
+        <span class="noticia">Gus Frito CEO of LPB gives back to charity</span> / 
+        <span class="noticia">Los Bros introduces new menu items</span> / 
+        <span class="noticia">LPB expands to 50 new locations</span> / 
+        <span class="noticia">Los Bros awarded Best Restaurant Chain</span> / 
+        <span class="noticia">LPB acquires major competitor</span> / 
+        <span class="noticia">Los Bros introduces first-ever vegan burger</span> / 
+        <span class="noticia">LPB becomes first fast food chain to accept cryptocurrency</span> / 
+        <span class="noticia">Los Bros launches own line of hot sauce</span> / 
+        <span class="noticia">LPB featured in new blockbuster movie</span> / 
+        <span class="noticia">Los Bros announces new charity initiative</span> / 
+        <span class="noticia">LPB named Fortune 500 company</span> / 
+        <span class="noticia">Los Bros partners with NASA for space mission</span> / 
+        <span class="noticia">LPB introduces drone delivery service</span> / 
+        <span class="noticia">Los Bros opens underwater restaurant</span> / 
+        <span class="noticia">LPB launches world's first hologram menu</span> / 
+        <span class="noticia">Los Bros wins Nobel Prize for Burger Innovation</span> / 
+        <span class="noticia">LPB introduces self-driving food truck</span> / 
+        <span class="noticia">Los Bros becomes official sponsor of Olympics</span> / 
+        <span class="noticia">LPB partners with world-renowned chef</span>
+      </marquee>     
+      <div class="chart-box">
+        <iframe id="dextools-widget"
+          title="DEXTools Trading Chart"
+          width="100%"
+          height="500"
+          src="https://www.dextools.io/widgets/es/ether/pe-light/0xa29fe6ef9592b5d408cca961d0fb9b1faf497d6d?theme=light&chartType=2&chartResolution=30&drawingToolbars=false"></iframe>
+      </div>
+      <div class="button-box">
+        <button style="margin-right: 10px;" onclick="cargarPagina('lospollos_menu.html')">Menu</button>
+        <button style="margin-right: 10px;">Reservations</button>
+        <button>Why Los Bros?</button>
+      </div>
+    </div>
+  </body>
+</html>

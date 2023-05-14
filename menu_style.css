@@ -1,0 +1,110 @@
+/* Estilos generales */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos del encabezado */
+  
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a:hover {
+    color: #f7941d;
+  }
+  
+  /* Estilos de la sección principal */
+  
+  main {
+    margin-top: 100px;
+    padding: 20px;
+  }
+  
+  .menu-item {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .menu-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item img {
+    display: block;
+    margin-bottom: 10px;
+    max-width: 100%;
+  }
+  
+  .menu-item p:last-of-type {
+    margin-top: 10px;
+  }
+  
+  /* Estilos del pie de página */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  
+  @media (max-width: 768px) {
+  
+    header {
+      padding: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+  
+  }  
